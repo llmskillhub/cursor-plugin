@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "llmskillhub": {
+      "url": "https://api.llmskillhub.com/mcp"
+    }
+  }
+}
