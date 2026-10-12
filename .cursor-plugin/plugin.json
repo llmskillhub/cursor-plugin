@@ -1,7 +1,7 @@
 {
   "name": "llmskillhub",
-  "description": "Find, read and install human-reviewed agent skills (SKILL.md) from LLM SkillHub in Cursor: search a growing catalogue by describing the task, see exactly what a skill does, add it to your project as a Cursor rule, and test skills with evals.",
-  "version": "0.1.0",
+  "description": "Find, read and install human-reviewed agent skills (SKILL.md) from LLM SkillHub in Cursor: search a growing catalogue by describing the task, see exactly what a skill does, install it as a native Cursor skill, and test skills with evals.",
+  "version": "0.1.1",
   "author": {
     "name": "LLM SkillHub",
     "email": "hello@llmskillhub.com",
@@ -10,6 +10,14 @@
   "homepage": "https://llmskillhub.com",
   "repository": "https://github.com/llmskillhub/cursor-plugin",
   "license": "MIT",
-  "keywords": ["skills", "agent-skills", "skill-md", "mcp", "cursor-rules", "evals", "catalogue"],
+  "keywords": [
+    "skills",
+    "agent-skills",
+    "skill-md",
+    "mcp",
+    "cursor-skills",
+    "evals",
+    "catalogue"
+  ],
   "logo": "assets/logo.png"
 }

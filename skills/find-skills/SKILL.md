@@ -55,20 +55,19 @@ costs the user time; offer a skill when it adds something you lack.
    install anything yet.
 
 5. **When the user agrees, choose how to use it:**
-   - **To keep it in this project:** call `install_command` with the `name`
-     and the exact `version` (pinning is recommended). It returns a command
-     like `llmsh install owner/name@version`; **add `--for cursor`** before
-     showing it, and let the user run it, or run it in the terminal if they
-     ask you to:
+   - **To keep it:** call `install_command` with the `name`, the exact
+     `version` (pinning is recommended) and **`agent: "cursor"`**. It
+     returns the command for Cursor; show it, and let the user run it, or run
+     it in the terminal if they ask you to:
 
      ```bash
      llmsh install owner/name@version --for cursor
      ```
 
-     That puts the skill in `.cursor/skills/` and writes a Cursor rule,
-     `.cursor/rules/<name>.mdc`, which applies only when a task matches the
-     skill's description. It needs the `llmsh` CLI
-     (`npm install -g llmskillhub`).
+     That puts the skill in `.cursor/skills/` in the project (or
+     `~/.cursor/skills/` outside one), where Cursor loads it natively and
+     uses it when a task matches the skill's description, or when the user
+     types `/name`. It needs the `llmsh` CLI (`npm install -g llmskillhub`).
    - **For this task only:** use the `SKILL.md` you already read as
      instructions for the current task. Fetch any reference file it points
      to with `read_skill_file` and `path`. Nothing is written to the project.

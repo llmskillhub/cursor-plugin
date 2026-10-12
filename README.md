@@ -36,9 +36,9 @@ npm install -g llmskillhub            # the llmsh CLI, once
 llmsh install owner/skill@version --for cursor
 ```
 
-This puts the skill in `.cursor/skills/` and writes a Cursor rule,
-`.cursor/rules/<skill>.mdc`, with `alwaysApply: false`, so Cursor applies it
-only when a task matches the skill's description.
+This puts the skill in `.cursor/skills/` in your project (or `~/.cursor/skills/`
+outside one). Cursor loads it natively and uses it when a task matches the
+skill's description, or when you type `/skill-name` in chat.
 
 ## Configuration
 
